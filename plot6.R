@@ -83,7 +83,7 @@ dataForPlotLA$SourceType <- gsub("^(Mobile - On-Road )", "", dataForPlotLA$Sourc
 
 
 ##open the png device
-png(file = "plot5.png", width=960, height = 960)
+png(file = "plot6.png", width=960, height = 960)
 
 ##averages plot
 plot1 = ggplot(mmData, aes(year, means)) + labs(title = "Average of emissions Baltimore")+geom_point(aes(color = year, size = 10))+labs(y = "Average value of emissions")+geom_line(aes(group=1))
